@@ -1,4 +1,4 @@
-function seleccionarMascotaJugador{
+function seleccionarMascotaJugador(){
     alert('Seleccionaste tu mascota')
 
 }
