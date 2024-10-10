@@ -1,2 +1,2 @@
 alert("Hola js")
-alert("que pasa")
+let botonMascotaJugador = document.getElementById('boton-mascota')
