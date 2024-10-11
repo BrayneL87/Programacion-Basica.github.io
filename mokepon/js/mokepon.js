@@ -1,5 +1,7 @@
 let ataqueJugador
 let ataqueEnemigo
+let vidasJugador = 3
+let vidasEnemigos = 3
 
 function iniciarJuego(){
     let botonMascotaJugador = document.getElementById('boton-mascota')
@@ -83,16 +85,29 @@ function ataqueAleatorioEnemigo(){
 }
 
 function combate(){
+    let spanVidasJugador = document.getElementById('vidas-jugador')
+    let spanVidasEnemigo = document.getElementById('vidas-enemigos')
+
     if(ataqueEnemigo == ataqueJugador){
         crearMensaje("EMPATE")
     }else if(ataqueJugador == 'FUEGO' && ataqueEnemigo == 'TIERRA'){
         crearMensaje("GANASTE")
+        vidasEnemigos--
+        spanVidasEnemigo.innerHTML = vidasEnemigos
     }else if(ataqueJugador == 'AGUA' && ataqueEnemigo == 'FUEGO'){
         crearMensaje("GANASTE")
+        vidasEnemigos--
+        spanVidasEnemigo.innerHTML = vidasEnemigos
     }else if(ataqueJugador == 'TIERRA' && ataqueEnemigo == 'AGUA'){
         crearMensaje("GANASTE")
+        vidasEnemigos--
+        spanVidasEnemigo.innerHTML = vidasEnemigos
     }else{
         crearMensaje("PERDISTE")
+        vidasJugador--
+        spanVidasJugador.innerHTML = vidasJugador
+
+        
     }
 }
 
@@ -112,3 +127,4 @@ function aleatorio(min, max){
 
 //funcion para colocar el scrit en la parte de arriba
 window.addEventListener('load', iniciarJuego)
+
