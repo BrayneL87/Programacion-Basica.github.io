@@ -46,6 +46,7 @@ function aleatorio(min, max){
                 triunfos = triunfos +1
             }else{
                 alert("PERDISTE")
+                perdidas = perdidas + 1
             }
         }
 alert("Ganaste " + triunfos + " veces. Perdiste " + perdidas + " veces.")
