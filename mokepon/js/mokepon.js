@@ -186,3 +186,5 @@ function aleatorio(min, max){
 //funcion para colocar el scrit en la parte de arriba
 window.addEventListener('load', iniciarJuego)
 
+
+
