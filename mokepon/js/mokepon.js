@@ -14,6 +14,9 @@ botonAgua.addEventListener('click', artaqueAgua)
 let botonTierra = document.getElementById('boton-tierra')
 botonTierra.addEventListener('click', artaqueTierra)
 
+let botonReiniciar = document.getElementById('boton-reinicar')
+botonReiniciar.addEventListener('click', reiniciarJuego)
+
 }
 
 function seleccionarMascotaJugador(){
@@ -139,6 +142,17 @@ function crearMensajeFinal(resultadoFinal){
 
     sectionMensaje.appendChild(parrafo)
 
+    let botonFuego = document.getElementById('boton-fuego')
+    botonFuego.disabled = true 
+    let botonAgua = document.getElementById('boton-agua')
+    botonAgua.disabled = true
+    let botonTierra = document.getElementById('boton-tierra')
+    botonTierra.disabled = true 
+
+}
+
+function reiniciarJuego(){
+    location.reload() // se utiliza para reiniciar la pagina que estas utilizando
 }
 
 
@@ -148,4 +162,3 @@ function aleatorio(min, max){
 
 //funcion para colocar el scrit en la parte de arriba
 window.addEventListener('load', iniciarJuego)
-
