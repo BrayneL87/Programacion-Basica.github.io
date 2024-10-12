@@ -4,22 +4,41 @@ let vidasJugador = 3
 let vidasEnemigos = 3
 
 function iniciarJuego(){
+    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
+    sectionSeleccionarAtaque.style.display = 'none'
+    //style.none se utiliza para ocultar los botones
+
+    let sectionReiniciar = document.getElementById('reinicar')
+    sectionReiniciar.style.display = 'none'
+
     let botonMascotaJugador = document.getElementById('boton-mascota')
-botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
+    botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)
 
-let botonFuego = document.getElementById('boton-fuego')
-botonFuego.addEventListener('click', artaqueFuego)
-let botonAgua = document.getElementById('boton-agua')
-botonAgua.addEventListener('click', artaqueAgua)
-let botonTierra = document.getElementById('boton-tierra')
-botonTierra.addEventListener('click', artaqueTierra)
+    
 
-let botonReiniciar = document.getElementById('boton-reinicar')
-botonReiniciar.addEventListener('click', reiniciarJuego)
+    let botonFuego = document.getElementById('boton-fuego')
+    botonFuego.addEventListener('click', artaqueFuego)
+    let botonAgua = document.getElementById('boton-agua')
+    botonAgua.addEventListener('click', artaqueAgua)
+    let botonTierra = document.getElementById('boton-tierra')
+    botonTierra.addEventListener('click', artaqueTierra)
+
+    let botonReiniciar = document.getElementById('boton-reinicar')
+    botonReiniciar.addEventListener('click', reiniciarJuego)
 
 }
 
 function seleccionarMascotaJugador(){
+    let sectionSeleccionarMascota = document.getElementById('seleccionar-mascota')
+    sectionSeleccionarMascota.style.display = 'none'
+    //style.none se utiliza para ocultar los botones
+
+    let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
+    sectionSeleccionarAtaque.style.display = 'block'
+    //style.display = 'block se utiliza para mostrar los botones
+
+  
+
     let inputHipodoge = document.getElementById('hipodoge')
     let inputCapipepo = document.getElementById('capipepo')
     let inputRatigueya = document.getElementById('ratigueya')
@@ -67,6 +86,7 @@ function artaqueAgua(){
     ataqueAleatorioEnemigo()
 
 }
+
 function artaqueTierra(){
     ataqueJugador = 'Tierra'
     ataqueAleatorioEnemigo()
@@ -149,6 +169,9 @@ function crearMensajeFinal(resultadoFinal){
     let botonTierra = document.getElementById('boton-tierra')
     botonTierra.disabled = true 
 
+    let sectionReiniciar = document.getElementById('reinicar')
+    sectionReiniciar.style.display = 'block'
+
 }
 
 function reiniciarJuego(){
@@ -162,3 +185,4 @@ function aleatorio(min, max){
 
 //funcion para colocar el scrit en la parte de arriba
 window.addEventListener('load', iniciarJuego)
+
