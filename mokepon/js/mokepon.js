@@ -120,7 +120,7 @@ function revisarVidas() {
     if (vidasEnemigo == 0) {
         crearMensajeFinal("<h2>FELICITACIONES! Ganaste 😍🤩🎉🎇</h2>")
     } else if (vidasJugador == 0) {
-        crearMensajeFinal('Lo siento, PERDISTE  😏😱🤦🏾‍♂️</h2>')
+        crearMensajeFinal('<h2>Lo siento, PERDISTE  😏😱🤦🏾‍♂️</h2>')
     }
 }
 
