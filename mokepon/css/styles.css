@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@300&display=swap');
 body {
-  font-family: 'Fredoka One', cursive;
-  background-color: #041562;
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+  background-color: #5EBBC9;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
 }
 
 #seleccionar-mascota {
@@ -10,11 +18,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  
+
 }
 
 .titulo {
   color: white;
-  font-size: 32px;
+  font-size: 72px;
+  font-family: "Kablammo", system-ui;
+  
+
 }
 h2{
   color: white;
@@ -23,18 +37,23 @@ h2{
 
 .subtitulo {
   color: white;
-  font-size: 20px;
+  font-size: 32px;
+  font-family: "Kablammo", system-ui;
+  margin-top: -30px;
+
 }
 
 .tarjetas {
   display: flex;
   gap: 10px;
+  font-family: "Kablammo", system-ui;
+
 }
 
 .tarjeta-de-mokepon {
   width: 180px;
   height: 100px;
-  background: #11468F;
+  background: #339979;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -42,12 +61,69 @@ h2{
   justify-content: center;
   align-items: center;
   color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .tarjeta-de-mokepon img {
   width: 80px;
 }
 
+#boton-mascota{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #4E349D;
+  border: 2px solid white;
+  color: white;
+  font-family: "Kablammo", system-ui;
+  margin-top: 30px;
+
+  cursor: pointer; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+#boton-fuego{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #f55822;
+  border: 2px solid white;
+  color: white;
+  font-family: "Kablammo", system-ui;
+  margin-top: 30px;
+
+  cursor: pointer; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#boton-agua{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #22b8f5;
+  border: 2px solid white;
+  color: white;
+  font-family: "Kablammo", system-ui;
+  margin-top: 30px;
+
+  cursor: pointer; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#boton-tierra{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #a54f1d;
+  border: 2px solid white;
+  color: white;
+  font-family: "Kablammo", system-ui;
+  margin-top: 30px;
+
+  cursor: pointer; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
 input {
   display: none;
 }
