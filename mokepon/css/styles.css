@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@300&display=swap');
+
 body {
   font-family: "Kablammo", system-ui;
   font-optical-sizing: auto;
@@ -27,7 +28,7 @@ body {
   color: white;
   font-size: 72px;
   font-family: "Kablammo", system-ui;
-  
+  text-shadow: 2px 2px #090909;
 
 }
 h2{
@@ -40,10 +41,11 @@ h2{
   font-size: 32px;
   font-family: "Kablammo", system-ui;
   margin-top: -30px;
+  text-shadow: 2px 2px #090909;
 
 }
 
-.tarjetas {
+.tarjetas, .tarjetas-ataques {
   display: flex;
   gap: 10px;
   font-family: "Kablammo", system-ui;
@@ -51,8 +53,8 @@ h2{
 }
 
 .tarjeta-de-mokepon {
-  width: 180px;
-  height: 100px;
+  width: 190px;
+  height: 110px;
   background: #339979;
   padding: 10px;
   box-sizing: border-box;
@@ -63,10 +65,28 @@ h2{
   color: white;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-shadow: 2px 2px #090909;
 }
 
 .tarjeta-de-mokepon img {
-  width: 80px;
+  width: 90px;
+  
+}
+.tarjeta-de-mokepon:hover{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #boton-mascota{
@@ -81,6 +101,7 @@ h2{
 
   cursor: pointer; 
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-shadow: 2px 2px #090909;
 
 }
 
@@ -125,5 +146,61 @@ h2{
 
 }
 input {
-  display: none;
+  display: none;  
+}
+
+#seleccionar-ataque{
+  flex-direction: column;
+  align-items: center;
+}
+.boton-de-ataque{
+  background-color: #339979;
+}
+#mensajes{
+  width: 280px;
+  background: #eeeeee;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+#boton-reiniciar{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #4E349D;
+  border: 2px solid white;
+  color: white;
+  font-family: "Kablammo", system-ui;
+  margin-top: 30px;
+
+  cursor: pointer; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-shadow: 2px 2px #090909;
+
+}
+.ataques{
+  display: grid;
+  grid-template-columns: 100px 100px
+}
+
+#vidas-jugador, #vidas-enemigo{
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.ataques-jugador, .ataques-enemigo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+@media(max-width: 760px){
+  .tarjetas, .tarjetas-ataques{
+    flex-direction: column;
+  }
 }
