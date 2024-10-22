@@ -45,7 +45,13 @@ h2{
 
 }
 
-.tarjetas, .tarjetas-ataques {
+.tarjetas {
+  display: flex;
+  gap: 40px;
+  font-family: "Kablammo", system-ui;
+
+}
+.tarjetas-ataques{
   display: flex;
   gap: 10px;
   font-family: "Kablammo", system-ui;
@@ -97,7 +103,7 @@ h2{
   border: 2px solid white;
   color: white;
   font-family: "Kablammo", system-ui;
-  margin-top: 30px;
+  margin-top: 40px;
 
   cursor: pointer; 
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -199,8 +205,11 @@ input {
 
 }
 
-@media(max-width: 760px){
+@media(max-width: 800px){
   .tarjetas, .tarjetas-ataques{
+    flex-direction: column;
+  }
+  body{
     flex-direction: column;
   }
 }
