@@ -10,7 +10,7 @@
         <section id="seleccionar-mascota">
             <h1 class="titulo">Mokepon</h1>
 
-            <h2 class="subtitulo">Elige tu mascota:</h2>
+            <h2 class="subtitulo">Elige tu mascota</h2>
 
             <div class="tarjetas">
                 <label class="tarjeta-de-mokepon" for="hipodoge">
@@ -36,26 +36,38 @@
         </section>
 
         <section id="seleccionar-ataque">
-            <h1 class="titulo">MOKEPON! 🔥💧🌱</h1>
+            <h1 class="titulo">MOKEPON</h1>
 
-            <h2>Elige tu ataque:</h2>
+            <h2 class="subtitulo">Elige tu ataque</h2>
 
-            <h2>
-            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p></h2>
-
-            <p>
+            <div class="tarjetas-ataques">
                 <button id="boton-fuego">Fuego 🔥</button>
                 <button id="boton-agua">Agua 💧</button>
                 <button id="boton-tierra">Tierra 🌱</button>
-            </p>
-        </section>
+            </div>
 
-        <section id="mensajes">
-        </section>
+               <section id="mensajes">
+                    <p id="resultado">Mucha Suerte</p>
 
-        <section id="reiniciar">
-            <button id="boton-reiniciar">Reiniciar</button>
-        </section>
+                    <div id="reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+                </div>                
+
+            <div class="ataques">
+                <div class="ataque-jugador">
+                    <p id="mascota-jugador"></p>
+                    <p id="vidas-jugador">3</p>
+                    <div id="ataque-del-jugador"></div>                 
+                </div>
+                <div class="ataque-enemigo">
+                    <p id="mascota-enemigo"></p>
+                    <p id="vidas-enemigo">3</p>
+                    <div id="ataque-del-enemigo"></div>
+                </div>                
+                
+                
+            </div>                    
+        </section>        
     </body>
 </html>
