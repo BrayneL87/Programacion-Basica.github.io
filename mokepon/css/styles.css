@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+  
 
 }
 
@@ -152,8 +153,18 @@ h2{
 
 }
 input {
-  display: none;  
+  display: none; 
 }
+input:checked + #hipodoge-agua-c1{
+  background-color: #22b8f5;
+}
+input:checked + #capipepo-tierra-c2{
+  background-color: #a54f1d;
+}
+input:checked + #ratigueya-fuego-c3{
+  background-color: #f55822;
+}
+
 
 #seleccionar-ataque{
   flex-direction: column;
@@ -209,7 +220,5 @@ input {
   .tarjetas, .tarjetas-ataques{
     flex-direction: column;
   }
-  body{
-    flex-direction: column;
-  }
+ 
 }
