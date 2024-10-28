@@ -44,7 +44,7 @@ function seleccionarMascotaJugador() {
         spanMascotaJugador.innerHTML = 'Ratigueya'
     } else {
         alert('Selecciona una mascota')
-        
+        location.reload()
     }
 
     seleccionarMascotaEnemigo()
