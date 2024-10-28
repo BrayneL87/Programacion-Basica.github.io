@@ -44,6 +44,8 @@ function seleccionarMascotaJugador() {
         spanMascotaJugador.innerHTML = 'Ratigueya'
     } else {
         alert('Selecciona una mascota')
+        
+    }else{
         return
     }
 
@@ -60,7 +62,7 @@ function seleccionarMascotaEnemigo() {
         spanMascotaEnemigo.innerHTML = 'Capipepo'
     } else {
         spanMascotaEnemigo.innerHTML = 'Ratigueya'
-    }return
+    }
 }
 
 function ataqueFuego() {
